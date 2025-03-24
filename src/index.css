@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-primary: #0a0a0a;   
+  --color-secondary: #f3f4f6;
+  --color-gray15: #181818;
+}
+
+
+@font-face {
+  font-family: 'LogoFont';
+  src: url('/src/assets/fonts/logo-font/Rolling Beat_Personal Use.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.logoFont {
+  font-family: 'LogoFont', sans-serif;
+}
+
+@font-face {
+  font-family: 'ProjectFont';
+  src: url('/src/assets/fonts/project-font/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
+.projectFont {
+  font-family: 'ProjectFont', sans-serif;
+}
+
+@font-face {
+  font-family: 'NameFont';
+  src: url('/src/assets/fonts/name-font/Magnolia Script.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.nameFont {
+  font-family: 'NameFont', sans-serif;
+}
+/* ---------------------------- */
+
+body {
+  @apply bg-primary text-secondary;
+}
+
+.container {
+  @apply mx-auto transition-all duration-300 h-full px-5 ;
+}
+
+.filterBtn {
+  @apply md:w-[150px] w-[120px] px-4 py-2 opacity-60 hover:opacity-100 bg-gray-700 text-secondary font-medium text-[16px] md:text-[18px] rounded-[8px] cursor-pointer border-1 border-gray-500 transition-all duration-300;
+}
+
+.filterBtn.active {
+  @apply opacity-100;
+}
+
+
+html { --screen: sm; } 
+
+/* @media (max-width: 640px) {
+  html { --screen: sm; }
+} */
+
+@media (min-width: 768px) {
+  html { --screen: md; }
+}
+
+@media (min-width: 1024px) {
+  html { --screen: lg; }
+}
+
