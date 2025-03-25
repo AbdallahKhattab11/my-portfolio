@@ -3,7 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-700  min-h-[50px] md:h-[50px] ">
+    <footer className="border-t-1 border-white/10  min-h-[60px] md:h-[60px] ">
       <div className="container flex flex-col gap-5 py-5  md:py-0 md:flex-row md:justify-between items-center">
         <div className="">
           <p className="text-[16px] md:text-[18px] text-secondary leading-7 font-medium text-center md:text-left">

@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
+
 import Lottie from "lottie-react";
 import computerAnimation from "../../assets/animation/computer-animation3.json";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="hero h-[800px] lg:h-[600px] ">
+    <div id="home" className="hero h-[800px] lg:h-[700px] ">
       <div className="container flex flex-col w-full justify-center lg:flex-row lg:items-center">
         <div className="left w-full h-1/2 lg:h-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start">
           <div className="img"></div>
@@ -20,16 +23,33 @@ const Hero = () => {
               technologies, crafting smooth and dynamic user experiences.
             </p>
           </div>
-          <div className="btns flex gap-5 mt-8">
-            <div className="w-[120px] text-[14px] md:text-[16px] md:w-[150px] h-[50px] bg-blue-500 rounded-lg cursor-pointer hover:-translate-y-1 transition-all duration-300">
-              <Link to="/projects" className="w-full h-full flex justify-center items-center">
-                View Projects
-              </Link>
+          <div className="links flex justify-center gap-4 mt-8">
+          <div className="cursor-pointer text-[16px] md:text-[18px] text-secondary leading-7 font-medium ">
+              <a
+                href="https://github.com/AbdallahKhattab11"
+                target="_blank"
+                className="text-blue-400 font-medium"
+              >
+                <FaGithub className="inline-block mr-1 text-[20px] " /> GitHub{" "}
+              </a>
             </div>
-            <div className="w-[120px] text-[14px] md:text-[16px] md:w-[150px] h-[50px] border-1 border-blue-500 text-blue-500 rounded-lg cursor-pointer hover:-translate-y-1 transition-all duration-300">
-              <Link to="/contact" className="w-full h-full flex justify-center items-center">
-                Contact Me
-              </Link>
+            <div className="cursor-pointer text-[16px] md:text-[18px] text-secondary leading-7 font-medium ">
+              <a
+                href="https://www.linkedin.com/in/abdallah-khattab-653729247/"
+                target="_blank"
+                className="text-blue-400 font-medium"
+              >
+                <FaLinkedin className="inline-block mr-1 text-[20px] " /> LinkedIn{" "}
+              </a>
+            </div>
+            <div className="cursor-pointer text-[16px] md:text-[18px] text-secondary leading-7 font-medium ">
+              <a
+                href="https://x.com/Abdallah_kh_1"
+                target="_blank"
+                className="text-blue-400 font-medium"
+              >
+                <FaXTwitter className="inline-block mr-1 text-[20px] " /> Twitter{" "}
+              </a>
             </div>
           </div>
         </div>

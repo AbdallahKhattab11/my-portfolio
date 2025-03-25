@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="about py-10 ">
+    <div id="about" className="about py-10 ">
       <div className="container flex flex-col items-center gap-10">
         <div className="title flex justify-center">
           <h2 className="bg-gradient-to-r from-blue-500 to-sky-500 bg-clip-text text-transparent text-[clamp(26px,3vw,32px)] font-semibold nameFont">

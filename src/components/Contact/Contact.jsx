@@ -1,8 +1,6 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
 import Message from '../Message/Message';
 
 
@@ -66,7 +64,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className="contact py-10 overflow-hidden relative">
+    <div id="contact" className="contact py-10 overflow-hidden relative">
       <div className="container">
         <div className="title flex justify-center">
           <h2 className="bg-gradient-to-r from-blue-500 to-sky-500 bg-clip-text text-transparent text-[clamp(26px,3vw,32px)] font-semibold nameFont">
@@ -75,37 +73,12 @@ const Contact = () => {
         </div>
         <div className="content mt-10">
           <div className="">
-            <p className="text-[16px] md:text-[18px] text-secondary leading-7 font-medium ">
+            <p className="text-[16px] md:text-[18px] text-center leading-7 font-medium ">
               I'm always excited to connect with fellow developers, tech
               enthusiasts, and creative minds! Whether you want to collaborate
               on an exciting project, discuss the latest trends in web
               development, or just say hi, feel free to reach out.
             </p>
-          </div>
-          <div className="mt-10">
-            <p className="text-[16px] md:text-[18px] text-secondary leading-7 font-medium mb-3">
-              Your can find me on : -{" "}
-            </p>
-            <div className="cursor-pointer text-[16px] md:text-[18px] text-secondary leading-7 font-medium pl-5 mb-3">
-              <a
-                href="https://github.com/AbdallahKhattab11"
-                target="_blank"
-                className="text-blue-400 font-medium"
-              >
-                <FaGithub className="inline-block mr-1 text-[20px] -mt-1" /> GitHub{" "}
-              </a>
-              - Check out my latest projects and contributions
-            </div>
-            <div className="cursor-pointer text-[16px] md:text-[18px] text-secondary leading-7 font-medium pl-5">
-              <a
-                href="https://www.linkedin.com/in/abdallah-khattab-653729247/"
-                target="_blank"
-                className="text-blue-400 font-medium"
-              >
-                <FaLinkedin className="inline-block mr-1 text-[20px] -mt-1" /> LinkedIn{" "}
-              </a>{" "}
-              - Let’s network and share knowledge
-            </div>
           </div>
         </div>
         <div className="form flex justify-center ">

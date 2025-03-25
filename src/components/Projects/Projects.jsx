@@ -138,7 +138,7 @@ const Projects = () => {
 
 
   return (
-    <div className="projects py-10 mb-10 lg:mb-0">
+    <div id="projects" className="projects py-10 mb-10 lg:mb-0">
       <div className="container flex flex-col gap-10">
         <div className="title flex flex-col gap-10 items-center">
           <h1 className="bg-gradient-to-r from-blue-500 to-sky-500 bg-clip-text text-transparent text-[clamp(26px,3vw,32px)] font-semibold nameFont">
