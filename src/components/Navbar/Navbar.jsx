@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { useState, useEffect } from "react";
 
