@@ -13,16 +13,16 @@ const SingleProject = memo(({ project }) => {
         />
       </div>
       <div className="content mt-5">
-        <h3 className="text-[20px] md:text-[24px] mb-4 nameFont ">
+        <h2 className="text-[20px] md:text-[24px] mb-4 nameFont ">
           {project.name}
-        </h3>
+        </h2>
         <p className="text-[16px] md:text-[18px] text-secondary leading-7">
           {project.description}
         </p>
       </div>
       <div className="flex gap-4 mt-5">
         <div className="live-demo">
-          <button className="cursor-pointer text-secondary flex gap-2 items-center bg-gradient-to-r from-blue-800 to-sky-600 px-4 py-2 rounded-lg font-medium text-[16px] hover:-translate-y-1 transition-all duration-200">
+          <button className="cursor-pointer text-secondary flex gap-2 items-center bg-blue-600 px-4 py-2 rounded-lg font-medium text-[16px] hover:-translate-y-1 transition-all duration-200">
             <a href={project.link} target="_blank" rel="noopener noreferrer">
               Live Demo
             </a>

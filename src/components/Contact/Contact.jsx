@@ -142,7 +142,7 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="bg-gradient-to-r from-blue-700 to-sky-600 text-white  w-[250px] md:w-[300px] h-[40px] rounded-[8px] cursor-pointer hover:scale-105 transition-all duration-300 mt-5"
+              className="bg-blue-600 text-white  w-[250px] md:w-[300px] h-[40px] rounded-[8px] cursor-pointer hover:bg-blue-700 transition-all duration-300 mt-5"
             >
               Send
             </button>

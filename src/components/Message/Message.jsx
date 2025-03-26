@@ -23,7 +23,7 @@ const Message = ({ setIsSending }) => {
             <p className="text-white font-medium text-[12px] sm:text-[14px]">Message Sent</p>
           </div>
         </div>
-        <button onClick={() => setIsSending(false)} className="text-gray-600 cursor-pointer hover:bg-white/5 p-1 rounded-md transition-colors ease-linear">
+        <button type="button" onClick={() => setIsSending(false)} className="text-gray-600 cursor-pointer hover:bg-white/5 p-1 rounded-md transition-colors ease-linear">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
